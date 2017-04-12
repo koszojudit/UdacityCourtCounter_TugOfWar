@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/MyTitleTextStyle</item>
+    </style>
+
+    <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="roundsRemainingStlye">
+        <item name="android:textSize">@dimen/roundsRemaining_textSize</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/roundsRemaining_marginTop</item>
+        <item name="android:layout_marginBottom">@dimen/roundsRemaining_marginBottom</item>
+        <item name="android:paddingLeft">@dimen/roundsRemaining_paddingLeft</item>
+    </style>
+
+    <style name="team_nameStyle">
+        <item name="android:textSize">@dimen/team_name_textSize</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="team_scoreStyle">
+        <item name="android:textSize">@dimen/team_score_textSize</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="primary_buttonStyle">
+        <item name="android:textSize">@dimen/win_button_textSize</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="secondary_buttonStyle">
+        <item name="android:textSize">@dimen/win_button_textSize</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:backgroundTint">@color/colorPrimaryDark</item>
+        <item name="android:color">@color/colorPrimary</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+</resources>

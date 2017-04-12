@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="roundsRemaining_textSize">18sp</dimen>
+    <dimen name="team_name_textSize">24sp</dimen>
+    <dimen name="team_score_textSize">56sp</dimen>
+    <dimen name="win_button_textSize">14sp</dimen>
+    <dimen name="rope_height">190dp</dimen>
+    <dimen name="roundsRemaining_marginTop">8dp</dimen>
+    <dimen name="roundsRemaining_marginBottom">16dp</dimen>
+    <dimen name="roundsRemaining_paddingLeft">8dp</dimen>
+    <dimen name="drawButton_marginTop">16dp</dimen>
+    <dimen name="resetButton_marginTop">16dp</dimen>
+    <dimen name="popUp_margin">32dp</dimen>
+</resources>

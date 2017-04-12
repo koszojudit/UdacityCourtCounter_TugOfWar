@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/popUp_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/roundsRemaining_textSize"
+            android:text="@string/winner_is"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/winner_textview"
+            android:layout_margin="@dimen/popUp_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/team_name_textSize"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/trophy"
+            />
+
+        <Button
+            android:id="@+id/dismiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/button_reset_text"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="@dimen/popUp_margin"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

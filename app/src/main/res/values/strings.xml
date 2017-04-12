@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Let\'s Play Tug Of War!</string>
+    <string name="rounds_remaining_number">10</string>
+    <string name="rounds_remaining_text">rounds remaining</string>
+    <string name="score_initial">0</string>
+    <string name="team_name_A">Team A</string>
+    <string name="team_name_B">Team B</string>
+    <string name="button_win_text">+ 1 points</string>
+    <string name="button_draw_text">Draw</string>
+    <string name="button_reset_text">Reset</string>
+    <string name="winner_is">And the winner is:</string>
+    <string name="draw_match">Both teams :)</string>
+</resources>
