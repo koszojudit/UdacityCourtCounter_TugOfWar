@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.a3_tugofwar.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:adjustViewBounds="true"
+            android:src="@drawable/tugofwar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rounds_remaining_number_view"
+                style="@style/roundsRemainingStlye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rounds_remaining_number" />
+
+            <TextView
+                android:id="@+id/rounds_remaining_text_view"
+                style="@style/roundsRemainingStlye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="@string/rounds_remaining_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/rope_height">
+
+                    <TextView
+                        android:id="@+id/team_A_name"
+                        style="team_nameStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/team_name_A"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/team_name_textSize" />
+
+                    <TextView
+                        android:id="@+id/team_A_score"
+                        style="@style/team_scoreStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/score_initial"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        style="@style/primary_buttonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="addOneForTeamA"
+                        android:text="@string/button_win_text" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/rope_height"
+                android:src="@drawable/rope_vertical" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/rope_height">
+
+                    <TextView
+                        android:id="@+id/team_B_name"
+                        style="team_nameStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/team_name_B"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/team_name_textSize" />
+
+                    <TextView
+                        android:id="@+id/team_B_score"
+                        style="@style/team_scoreStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/score_initial" />
+
+                    <Button
+                        style="@style/primary_buttonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="addOneForTeamB"
+                        android:text="@string/button_win_text" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            style="@style/primary_buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/drawButton_marginTop"
+            android:onClick="minusOneRound"
+            android:text="@string/button_draw_text" />
+
+        <Button
+            style="@style/secondary_buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/resetButton_marginTop"
+            android:onClick="resetScore"
+            android:text="@string/button_reset_text" />
+
+    </LinearLayout>
+
+</ScrollView>
