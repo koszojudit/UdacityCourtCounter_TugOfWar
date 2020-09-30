@@ -3,6 +3,7 @@ package com.example.android.a3_tugofwar;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity; //it will work in 2020 since v7 code is now not working and showing error
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
